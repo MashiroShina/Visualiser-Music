@@ -49,7 +49,7 @@ public class VisiTest : MonoBehaviour {
 
                 // Set offset so they stretch off the ground instead of expand in the air
                 bars[i].transform.position = new Vector3(i, curData / 2.0f*10.0f, 0);
-                bars[i].transform.localScale = Vector3.Lerp(bars[i].transform.localScale, new Vector3(1, curData * 10.0f, 1),Time.deltaTime);
+                bars[i].transform.localScale = new Vector3(1, curData * 10.0f, 1);//Vector3.Lerp(bars[i].transform.localScale, new Vector3(1, curData * 10.0f, 1),Time.deltaTime);
 
             }
         }
